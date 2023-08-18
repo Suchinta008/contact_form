@@ -1,7 +1,7 @@
 # contact_form
 This is a simple contact form and I have used XAMPP server. 
 I have also used a mailer system using core php only which will send a email to the owner of the beauty saloon.
-The owner is having the email id : suchintachanda@gmail.com. So in our case we are sending the email to the owner and also in the index.php we are using /n
+The owner is having the email id : suchintachanda@gmail.com. So in our case we are sending the email to the owner and also in the index.php we are using
                 $headers  = 'From: '.$email . "\r\n" .
                 'MIME-Version: 1.0' . "\r\n" .
                 'Content-type: text/html; charset=utf-8';
