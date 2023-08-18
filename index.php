@@ -4,9 +4,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 };
 $msg=[];
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
 if (isset($_POST['submit'])) {
 $name = $_POST['name'];
