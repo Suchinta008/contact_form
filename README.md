@@ -30,7 +30,7 @@ N.B. -> we are not setting any sendmail_from as we want the send the email id of
 
 ## Configure the Database 
 To configure the Database first we need to create the database. In my case I created the database with name contact_form and inside it I created the table contact_form
-You can simply run the below query to create the table 
+You can simply run the below query to create the table after creating the Database
 
 
 ####
