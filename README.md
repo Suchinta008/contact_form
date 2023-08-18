@@ -33,6 +33,7 @@ To configure the Database first we need to create the database. In my case I cre
 You can simply run the below query to create the table 
 
 
+####
     CREATE TABLE contact_form (
     id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(255) NOT NULL,
