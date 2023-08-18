@@ -11,14 +11,23 @@ Here $email is the email_id of the person raising the Query and we are fetching 
 ### We need to keep in mind that since in the local we are using XAMPP server we need to make some critical changes in the following files too for marking the mailer work perfectly
 #### In php.ini 
 Find the [mail function]
-[mail function]
-SMTP = smtp.gmail.com
-smtp_port = 587
-sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+####
+                [mail function]
+                SMTP = smtp.gmail.com
+                smtp_port = 587
+                sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+N.B. -> we are not setting any sendmail_from as we want the send the email id of the Query raiser directly to the owner.
 
 #### In sendmail.ini. It is usually located in the C:\xampp\sendmail if the XAMPP installed in the C: Drive.
 
-N.B. -> we are not setting any sendmail_from as we want the send the email id of the Query raiser directly to the owner.
+####
+                smtp_server=smtp.gmail.com
+                smtp_port=587
+                error_logfile=error.log
+                debug_logfile=debug.log
+                auth_username=your_email@gmail.com
+                auth_password=your_gmail_password
+                force_sender=your_email@gmail.com
 
 ## Configure the Database 
 To configure the Database first we need to create the database. In my case I created the database with name contact_form and inside it I created the table contact_form
