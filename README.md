@@ -2,10 +2,10 @@
 This is a simple contact form and I have used XAMPP server. 
 I have also used a mailer system using core php only which will send a email to the owner of the beauty saloon.
 The owner is having the email id : suchintachanda@gmail.com. So in our case we are sending the email to the owner and also in the index.php we are using
+####
                 $headers  = 'From: '.$email . "\r\n" .
                 'MIME-Version: 1.0' . "\r\n" .
                 'Content-type: text/html; charset=utf-8';
-            
 Here $email is the email_id of the person raising the Query and we are fetching the detail from the person during the submission of the form.
 
 ### We need to keep in mind that since in the local we are using XAMPP server we need to make some critical changes in the following files too for marking the mailer work perfectly
