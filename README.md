@@ -1,6 +1,6 @@
 # contact_form
 This is a simple contact form and I have used XAMPP server. 
-I have also used a mailer system using core php only which will send a email to the owner of the beauty saloon.
+I have also used a mailer system using just core php only which will send a email to the owner of the beauty saloon.
 The owner is having the email id : suchintachanda@gmail.com. So in our case we are sending the email to the owner and also in the index.php we are using
 
                 $headers  = 'From: '.$email . "\r\n" .
@@ -24,10 +24,10 @@ N.B. -> we are not setting any sendmail_from as we want the send the email id of
                 smtp_port=587
                 error_logfile=error.log
                 debug_logfile=debug.log
-                auth_username=your_email@gmail.com
-                auth_password=your_gmail_password
-                force_sender=your_email@gmail.com
+                auth_username=suchinta007@gmail.com
+                auth_password=felinxhejlxcniwy
 
+N.B. > To test you need to generate app passwords. In my case I used my own email to do so.
 ## Configure the Database 
 To configure the Database first we need to create the database. In my case I created the database with name contact_form and inside it I created the table contact_form
 You can simply run the below query to create the table after creating the Database
@@ -45,4 +45,8 @@ You can simply run the below query to create the table after creating the Databa
     timestamp DATETIME NOT NULL
     );
 
+
+# :: N.B. :: 
+
+I have attached the php.ini file and sendmail.ini file just for reference
 
